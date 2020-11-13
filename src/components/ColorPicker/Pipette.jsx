@@ -55,7 +55,7 @@ const Pipette = () => {
                 onChange={onChange}
             />
         </PipetteItem>
-    )
-}
+    );
+};
 
 export default Pipette;

@@ -9,6 +9,6 @@ const CellItem = styled.div`
 
 const Cell = ({ fillColor }) => {
     return <CellItem style={{background: `rgb(${fillColor.r}, ${fillColor.g}, ${fillColor.b}`}} />
-}
+};
 
 export default Cell;

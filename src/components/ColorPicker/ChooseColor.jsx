@@ -17,6 +17,10 @@ const ChooseColor = ({visible, openModal, closeModal, onSubmit, onCancel, onChan
                 visible={visible}
                 onOk={onSubmit}
                 onCancel={closeModal}
+                footer={[
+                    <Button key="back" onClick={closeModal}>Cancel</Button>,
+                    <Button key="submit" onClick={onSubmit} type="primary">Submit</Button>
+                ]}
             >
                 <Cell fillColor={value} />
                 <RangeItem positionValue={value.r} letter={'r'} onChange={onChange} />
@@ -25,7 +29,7 @@ const ChooseColor = ({visible, openModal, closeModal, onSubmit, onCancel, onChan
                 <Button onClick={onCancel}>Reset</Button>
             </Modal>
         </>
-    )
-}
+    );
+};
 
 export default ChooseColor;

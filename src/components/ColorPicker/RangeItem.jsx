@@ -22,7 +22,7 @@ const RangeItem = ({ letter, positionValue, onChange }) => {
                 onChange={(e) => onChange(e.target.value, letter)}
             />
         </Range>
-    )
-}
+    );
+};
 
 export default RangeItem;

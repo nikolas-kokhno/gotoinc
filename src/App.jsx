@@ -7,7 +7,7 @@ const App = () => {
             <Pipette />
             <Pipette />
         </div>
-    )
-}
+    );
+};
 
 export default App;
